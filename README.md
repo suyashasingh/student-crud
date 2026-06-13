@@ -145,6 +145,10 @@ student-crud/
 └── README.md
 
 
+## 📸 Screenshots
+![crud operation ui](<Screenshot 2026-06-13 at 4.48.26 PM.png>)
+
+
 ---
 
 ## ⚙️ How to Run
