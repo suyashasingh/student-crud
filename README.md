@@ -146,7 +146,7 @@ student-crud/
 
 
 ## 📸 Screenshots
-![crud operation ui](<Screenshot 2026-06-13 at 4.48.26 PM.png>)
+![crud operation ui](<Screenshot 2026-06-13 at 4.46.15 PM.png>)
 
 
 ---
