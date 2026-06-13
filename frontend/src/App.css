@@ -1,0 +1,235 @@
+body{
+  background:#eef2ff;
+  font-family:Arial;
+}
+
+
+.container{
+
+  width:800px;
+  margin:50px auto;
+  background:white;
+  padding:30px;
+  border-radius:15px;
+  box-shadow:0 10px 30px #ccc;
+
+}
+
+
+h1{
+
+text-align:center;
+
+}
+
+
+form{
+
+display:flex;
+gap:10px;
+margin-bottom:30px;
+
+}
+
+
+input{
+
+padding:12px;
+flex:1;
+border-radius:8px;
+border:1px solid #ccc;
+
+}
+
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+button:hover {
+    opacity: 0.85;
+    transform: translateY(-1px);
+}
+
+
+.delete {
+  background: #dc2626;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+
+
+table{
+
+  width:100%;
+  border-collapse:collapse;
+
+}
+
+
+td,th{
+  padding:12px;
+  border-bottom:1px solid #ddd;
+}
+
+.error{
+  color:#dc2626;
+  margin-bottom:10px;
+  font-weight:600;
+}
+
+.popup{
+  position:fixed;
+  top:25px;
+  right:25px;
+  z-index:999;
+
+  animation:slide 0.3s ease;
+
+}
+
+
+.popup-box{
+
+  background:white;
+  padding:18px 25px;
+  border-radius:12px;
+
+  box-shadow:
+  0 10px 30px rgba(0,0,0,0.2);
+
+  display:flex;
+  align-items:center;
+  gap:15px;
+
+  min-width:250px;
+
+}
+
+
+.popup-box span{
+
+  background:#22c55e;
+  color:white;
+
+  width:30px;
+  height:30px;
+
+  border-radius:50%;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  font-weight:bold;
+
+}
+
+
+.popup-box p{
+
+  margin:0;
+  font-weight:600;
+
+}
+
+
+@keyframes slide{
+
+  from{
+
+  transform:translateX(100px);
+  opacity:0;
+
+  }
+
+  to{
+
+  transform:translateX(0);
+  opacity:1;
+
+  }
+
+}
+
+.modal-bg{
+
+  position:fixed;
+  inset:0;
+
+  background:rgba(0,0,0,0.45);
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  z-index:1000;
+
+}
+
+
+.confirm-box{
+
+  background:white;
+  width:350px;
+  padding:30px;
+  border-radius:18px;
+  text-align:center;
+  box-shadow:0 15px 40px rgba(0,0,0,0.3);
+  animation:pop .2s ease;
+
+}
+
+
+.confirm-box h2{
+  margin-top:0;
+}
+
+
+.confirm-box p{
+  color:#666;
+}
+
+
+.actions{
+  display:flex;
+  justify-content:center;
+  gap:15px;
+  margin-top:25px;
+}
+
+
+.cancel{
+  background:#64748b;
+}
+
+
+.delete{
+  background:#dc2626;
+}
+
+
+@keyframes pop{
+
+  from{
+
+  transform:scale(.8);
+  opacity:0;
+
+  }
+
+  to{
+
+    transform:scale(1);
+    opacity:1;
+  }
+
+}

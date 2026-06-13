@@ -1,0 +1,17 @@
+# Spring Boot
+backend/target/
+
+# React
+frontend/node_modules/
+frontend/dist/
+
+# Database
+backend/data/
+
+# IDE
+.idea/
+.vscode/
+
+# Mac
+.DS_Store
+
